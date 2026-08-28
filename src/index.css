@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans;
+  }
+}
+
+/* WCAG AAA High-Contrast Mode */
+.high-contrast-mode {
+  filter: contrast(140%) brightness(95%);
+}
+
+.high-contrast-mode body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.high-contrast-mode a,
+.high-contrast-mode button {
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Keyframes */
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 98%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.animate-scan-line {
+  position: absolute;
+  animation: scan 2.8s ease-in-out infinite;
+}
+
+/* Print Styles for Patta Certificate */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, aside, .print\:hidden {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+}

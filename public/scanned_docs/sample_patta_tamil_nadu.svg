@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="100%" height="100%" style="background-color: #fdfbf7; font-family: 'Times New Roman', serif;">
+  <defs>
+    <filter id="paper-texture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feDiffuseLighting in="noise" lighting-color="#fdf6e2" surfaceScale="1.5" result="light">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      <feBlend mode="multiply" in="SourceGraphic" in2="light" />
+    </filter>
+  </defs>
+
+  <!-- Paper background with vintage tint -->
+  <rect width="1000" height="1400" fill="#fbf8ee" />
+  <rect x="30" y="30" width="940" height="1340" fill="none" stroke="#6d5335" stroke-width="2.5" stroke-dasharray="8,4" />
+  <rect x="40" y="40" width="920" height="1320" fill="none" stroke="#8b5e3c" stroke-width="1" />
+
+  <!-- Watermark -->
+  <text x="500" y="700" font-size="64" font-family="'Times New Roman', serif" fill="#000000" opacity="0.04" text-anchor="middle" transform="rotate(-35, 500, 700)" font-weight="bold">GOVERNMENT OF TAMIL NADU • REVENUE SETTLEMENT</text>
+
+  <!-- Official State Seal Emblem Placeholder -->
+  <g transform="translate(460, 60)" stroke="#1a365d" fill="#1a365d">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#1a365d" stroke-width="2.5"/>
+    <circle cx="40" cy="40" r="30" fill="none" stroke="#b45309" stroke-width="1.5"/>
+    <text x="40" y="35" font-size="9" text-anchor="middle" font-family="sans-serif" font-weight="bold">தமிழ்நாடு அரசு</text>
+    <text x="40" y="47" font-size="8" text-anchor="middle" font-family="sans-serif">GOVT OF TAMIL NADU</text>
+    <polygon points="40,15 44,25 36,25" fill="#1a365d"/>
+  </g>
+
+  <!-- Header Text -->
+  <text x="500" y="165" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" letter-spacing="1">வருவாய்த்துறை நில அளவை மற்றும் நிலவரித்திட்டம்</text>
+  <text x="500" y="195" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">DEPARTMENT OF REVENUE &amp; DISASTER MANAGEMENT</text>
+  <text x="500" y="220" font-size="14" font-style="italic" fill="#64748b" text-anchor="middle">நிரந்தர நில உரிமை பட்டா / சிட்டா நகல் (படிவம் எண் 10 / Form No. 10)</text>
+
+  <line x1="80" y1="235" x2="920" y2="235" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- Document Meta & Revenue Stamps -->
+  <!-- Left Header -->
+  <text x="80" y="265" font-size="13" font-weight="bold" fill="#334155">மாவட்டம் (District): <tspan font-weight="normal" fill="#0f172a">MADURAI / மதுரை</tspan></text>
+  <text x="80" y="290" font-size="13" font-weight="bold" fill="#334155">வட்டம் (Taluk): <tspan font-weight="normal" fill="#0f172a">MELUR / மேலூர்</tspan></text>
+  <text x="80" y="315" font-size="13" font-weight="bold" fill="#334155">கிராமம் (Village): <tspan font-weight="normal" fill="#0f172a">NAVINIPATTI / நாவினிப்பட்டி</tspan></text>
+
+  <!-- Right Header (Patta Box) -->
+  <rect x="610" y="245" width="290" height="70" fill="#f8fafc" stroke="#cbd5e1" rx="4" />
+  <text x="630" y="275" font-size="13" font-weight="bold" fill="#334155">பட்டா எண் (Patta No):</text>
+  <text x="790" y="275" font-size="16" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">TN-88421</text>
+  <text x="630" y="300" font-size="12" fill="#64748b">பதிவு எண்: DOC-8821/2025</text>
+
+  <!-- Main Section: Landowner Details -->
+  <rect x="80" y="340" width="840" height="150" fill="#ffffff" stroke="#94a3b8" />
+  <rect x="80" y="340" width="840" height="35" fill="#f1f5f9" stroke="#94a3b8" />
+  <text x="100" y="363" font-size="14" font-weight="bold" fill="#1e293b">1. நில உரிமையாளர் விவரங்கள் (Landowner Details)</text>
+
+  <!-- Row 1: Owner Name -->
+  <text x="100" y="405" font-size="13" fill="#475569">உரிமையாளர் பெயர் (Owner Name):</text>
+  <text x="320" y="405" font-size="15" font-weight="bold" fill="#0f172a">K. R. Sundaralingam / கே. ஆர். சுந்தரலிங்கம்</text>
+
+  <!-- Row 2: Father/Husband Name -->
+  <text x="100" y="440" font-size="13" fill="#475569">தந்தை / கணவர் பெயர் (Father/Husband):</text>
+  <text x="320" y="440" font-size="15" font-weight="bold" fill="#0f172a">Ramasamy Thevar / ராமசாமி தேவர்</text>
+
+  <!-- Row 3: Ownership Type -->
+  <text x="100" y="475" font-size="13" fill="#475569">உரிமை வகை (Ownership Type):</text>
+  <text x="320" y="475" font-size="14" font-weight="bold" fill="#0f172a">தனி நபர் உரிமை (Single Owner / Pattadar)</text>
+
+  <!-- Section 2: Survey & Land Description Table -->
+  <rect x="80" y="520" width="840" height="240" fill="#ffffff" stroke="#94a3b8" />
+  
+  <!-- Table Header -->
+  <rect x="80" y="520" width="840" height="40" fill="#f1f5f9" stroke="#94a3b8" />
+  <text x="100" y="545" font-size="13" font-weight="bold" fill="#1e293b">புல எண் (Survey No)</text>
+  <text x="270" y="545" font-size="13" font-weight="bold" fill="#1e293b">உட்பிரிவு (Sub-div)</text>
+  <text x="420" y="545" font-size="13" font-weight="bold" fill="#1e293b">வகைப்பாடு (Class)</text>
+  <text x="600" y="545" font-size="13" font-weight="bold" fill="#1e293b">பரப்பளவு (Area Ha)</text>
+  <text x="760" y="545" font-size="13" font-weight="bold" fill="#1e293b">தீர்வை (Tariff Rs)</text>
+
+  <line x1="80" y1="560" x2="920" y2="560" stroke="#94a3b8" />
+  <line x1="250" y1="520" x2="250" y2="760" stroke="#94a3b8" />
+  <line x1="400" y1="520" x2="400" y2="760" stroke="#94a3b8" />
+  <line x1="580" y1="520" x2="580" y2="760" stroke="#94a3b8" />
+  <line x1="740" y1="520" x2="740" y2="760" stroke="#94a3b8" />
+
+  <!-- Row 1 Data (Simulated handwritten stroke style) -->
+  <text x="110" y="605" font-size="16" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">142</text>
+  <text x="280" y="605" font-size="17" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">7A</text>
+  <text x="420" y="605" font-size="14" fill="#0f172a">நஞ்சை (Wetland)</text>
+  <text x="620" y="605" font-size="16" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">1.84.00</text>
+  <text x="770" y="605" font-size="14" fill="#0f172a">14.80</text>
+
+  <!-- Row 2 Data (Additional parcel in khata) -->
+  <line x1="80" y1="640" x2="920" y2="640" stroke="#e2e8f0" />
+  <text x="110" y="675" font-size="14" fill="#64748b">142</text>
+  <text x="280" y="675" font-size="14" fill="#64748b">7B (Joint)</text>
+  <text x="420" y="675" font-size="13" fill="#64748b">நஞ்சை (Wetland)</text>
+  <text x="620" y="675" font-size="14" fill="#64748b">0.96.00</text>
+  <text x="770" y="675" font-size="13" fill="#64748b">7.20</text>
+
+  <!-- Section 3: Boundaries (Chathur Seemai) -->
+  <rect x="80" y="780" width="840" height="150" fill="#ffffff" stroke="#94a3b8" />
+  <rect x="80" y="780" width="840" height="35" fill="#f1f5f9" stroke="#94a3b8" />
+  <text x="100" y="803" font-size="14" font-weight="bold" fill="#1e293b">2. நான்கு எல்லை விவரங்கள் (Boundaries / Chathur Seemai)</text>
+
+  <text x="100" y="845" font-size="13" fill="#475569">வடக்கு (North): <tspan font-weight="bold" fill="#0f172a">Survey No 141 (Panchayat Channel Road)</tspan></text>
+  <text x="100" y="875" font-size="13" fill="#475569">தெற்கு (South): <tspan font-weight="bold" fill="#0f172a">Survey No 143/2 (M. Muthiah Land)</tspan></text>
+  <text x="100" y="905" font-size="13" fill="#475569">கிழக்கு (East): <tspan font-weight="bold" fill="#0f172a">Irrigation Canal (Periyar Branch Channel)</tspan></text>
+  <text x="500" y="905" font-size="13" fill="#475569">மேற்கு (West): <tspan font-weight="bold" fill="#0f172a">Survey No 142/6 (Govt Poramboke)</tspan></text>
+
+  <!-- Section 4: Revenue Seals & Officer Signature -->
+  <!-- Official Seal -->
+  <g transform="translate(180, 1000)">
+    <circle cx="60" cy="60" r="55" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.85" stroke-dasharray="6,2"/>
+    <circle cx="60" cy="60" r="45" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.85"/>
+    <text x="60" y="45" font-size="8" text-anchor="middle" fill="#2563eb" font-weight="bold">TAHSILDAR OFFICE</text>
+    <text x="60" y="62" font-size="9" text-anchor="middle" fill="#2563eb" font-weight="bold">MELUR TALUK</text>
+    <text x="60" y="78" font-size="8" text-anchor="middle" fill="#2563eb">MADURAI DIST</text>
+  </g>
+
+  <!-- VAO Stamp -->
+  <g transform="translate(420, 1020)">
+    <rect x="0" y="0" width="160" height="50" fill="none" stroke="#9333ea" stroke-width="1.5" opacity="0.75" transform="rotate(-3)"/>
+    <text x="80" y="22" font-size="10" text-anchor="middle" fill="#9333ea" font-weight="bold" transform="rotate(-3)">VERIFIED &amp; COMPARED</text>
+    <text x="80" y="38" font-size="9" text-anchor="middle" fill="#9333ea" transform="rotate(-3)">VAO NAVINIPATTI</text>
+  </g>
+
+  <!-- Tahsildar Signature -->
+  <g transform="translate(680, 990)">
+    <!-- Signature scribble -->
+    <path d="M 20 45 Q 40 10 70 35 T 120 20 T 170 45" fill="none" stroke="#1e3a8a" stroke-width="2.5" />
+    <text x="95" y="70" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle">V. Meenakshi Sundaram</text>
+    <text x="95" y="88" font-size="11" fill="#475569" text-anchor="middle">Tahsildar &amp; Taluk Executive Magistrate</text>
+    <text x="95" y="104" font-size="10" fill="#64748b" text-anchor="middle">Melur, Madurai District</text>
+  </g>
+
+  <!-- Barcode & Archive Reference -->
+  <g transform="translate(80, 1220)">
+    <rect x="0" y="0" width="840" height="55" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="20" y="25" font-size="11" font-weight="bold" fill="#334155">DIGITAL ARCHIVE REF: DILRMP/TN/MDU/2026/88421</text>
+    <text x="20" y="42" font-size="10" fill="#64748b">Scanned at 600 DPI • Archival Quality Ledger Book Volume IV, Folio 142</text>
+  </g>
+</svg>

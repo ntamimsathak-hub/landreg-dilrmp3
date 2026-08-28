@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="100%" height="100%" style="background-color: #fdfbf7; font-family: 'Times New Roman', serif;">
+  <!-- Paper background with subtle parchment style -->
+  <rect width="1000" height="1400" fill="#fcf9ee" />
+  <rect x="30" y="30" width="940" height="1340" fill="none" stroke="#78350f" stroke-width="2" stroke-dasharray="6,4" />
+
+  <!-- Watermark -->
+  <text x="500" y="700" font-size="60" fill="#000000" opacity="0.04" text-anchor="middle" transform="rotate(-35, 500, 700)" font-weight="bold">GOVERNMENT OF UTTAR PRADESH • BHULEKH</text>
+
+  <!-- Header -->
+  <text x="500" y="120" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">उत्तर प्रदेश राजस्व परिषद (Board of Revenue UP)</text>
+  <text x="500" y="150" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">खतौनी (अधिकार अभिलेख) / KHATAUNI (RECORD OF RIGHTS)</text>
+  <text x="500" y="175" font-size="14" font-style="italic" fill="#64748b" text-anchor="middle">उत्तर प्रदेश राजस्व संहिता, 2006 (धारा 31/32) के अंतर्गत उद्धरण</text>
+
+  <line x1="80" y1="195" x2="920" y2="195" stroke="#94a3b8" stroke-width="1.5" />
+
+  <!-- Metadata -->
+  <text x="80" y="230" font-size="13" font-weight="bold" fill="#334155">जनपद (District): <tspan font-weight="normal" fill="#0f172a">LUCKNOW / लखनऊ</tspan></text>
+  <text x="380" y="230" font-size="13" font-weight="bold" fill="#334155">तहसील (Tehsil): <tspan font-weight="normal" fill="#0f172a">BAKSHI KA TALAB / बक्शी का तालाब</tspan></text>
+  <text x="700" y="230" font-size="13" font-weight="bold" fill="#334155">ग्राम (Village): <tspan font-weight="normal" fill="#0f172a">BHAISAMAU / भैसामऊ</tspan></text>
+
+  <text x="80" y="265" font-size="13" font-weight="bold" fill="#334155">खाता संख्या (Khata No): <tspan font-weight="bold" fill="#0f172a">00412</tspan></text>
+  <text x="380" y="265" font-size="13" font-weight="bold" fill="#334155">फसली वर्ष (Fasli Year): <tspan font-weight="normal" fill="#0f172a">1431 - 1436 (2024-2029)</tspan></text>
+
+  <!-- Table -->
+  <rect x="80" y="300" width="840" height="400" fill="#ffffff" stroke="#64748b" />
+  <rect x="80" y="300" width="840" height="45" fill="#f1f5f9" stroke="#64748b" />
+
+  <!-- Columns -->
+  <text x="120" y="328" font-size="13" font-weight="bold" fill="#1e293b">खातेदार का नाम (Landowner)</text>
+  <text x="440" y="328" font-size="13" font-weight="bold" fill="#1e293b">खसरा / गाटा संख्या</text>
+  <text x="630" y="328" font-size="13" font-weight="bold" fill="#1e293b">क्षेत्रफल (हेक्टेयर)</text>
+  <text x="780" y="328" font-size="13" font-weight="bold" fill="#1e293b">मालगुजारी (रु)</text>
+
+  <line x1="380" y1="300" x2="380" y2="700" stroke="#64748b" />
+  <line x1="600" y1="300" x2="600" y2="700" stroke="#64748b" />
+  <line x1="750" y1="300" x2="750" y2="700" stroke="#64748b" />
+
+  <!-- Row Data -->
+  <text x="95" y="380" font-size="15" font-weight="bold" fill="#0f172a">1. रामप्रसाद तिवारी (Ramprasad Tiwari)</text>
+  <text x="95" y="405" font-size="14" fill="#475569">पिता: स्व. हरिशंकर तिवारी</text>
+  <text x="95" y="445" font-size="15" font-weight="bold" fill="#0f172a">2. शिवराम तिवारी (Shivram Tiwari)</text>
+  <text x="95" y="470" font-size="14" fill="#475569">पिता: स्व. हरिशंकर तिवारी (सहखातेदार)</text>
+
+  <text x="430" y="380" font-size="18" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">219/3 Ga</text>
+  <text x="640" y="380" font-size="18" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">2.1500</text>
+  <text x="800" y="380" font-size="15" fill="#0f172a">24.50</text>
+
+  <!-- Seals and Signature -->
+  <g transform="translate(650, 800)">
+    <circle cx="50" cy="50" r="45" fill="none" stroke="#dc2626" stroke-width="2" opacity="0.8"/>
+    <text x="50" y="45" font-size="9" text-anchor="middle" fill="#dc2626" font-weight="bold">तहसीलदार कार्यालय</text>
+    <text x="50" y="60" font-size="8" text-anchor="middle" fill="#dc2626">बक्शी का तालाब (लखनऊ)</text>
+  </g>
+</svg>

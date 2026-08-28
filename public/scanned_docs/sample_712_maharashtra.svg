@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1400" width="100%" height="100%" style="background-color: #fdfbf7; font-family: 'Times New Roman', serif;">
+  <rect width="1000" height="1400" fill="#faf8ef" />
+  <rect x="30" y="30" width="940" height="1340" fill="none" stroke="#047857" stroke-width="2" stroke-dasharray="6,4" />
+
+  <text x="500" y="700" font-size="64" fill="#000000" opacity="0.03" text-anchor="middle" transform="rotate(-35, 500, 700)" font-weight="bold">MAHARASHTRA LAND REVENUE • 7/12 EXTRACT</text>
+
+  <text x="500" y="120" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">महाराष्ट्र शासन महसूल विभाग (Govt of Maharashtra)</text>
+  <text x="500" y="150" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">गाव नमुना सात (अधिकार अभिलेख पत्रक) व बारा (पिकांची नोंदवही)</text>
+
+  <line x1="80" y1="180" x2="920" y2="180" stroke="#94a3b8" stroke-width="1.5" />
+
+  <text x="80" y="220" font-size="13" font-weight="bold" fill="#334155">जिल्हा (District): <tspan font-weight="normal">PUNE / पुणे</tspan></text>
+  <text x="380" y="220" font-size="13" font-weight="bold" fill="#334155">तालुका (Taluka): <tspan font-weight="normal">HAVELI / हवेली</tspan></text>
+  <text x="700" y="220" font-size="13" font-weight="bold" fill="#334155">गाव (Village): <tspan font-weight="normal">WAGHOLI / वाघोली</tspan></text>
+
+  <!-- Content Box -->
+  <rect x="80" y="260" width="840" height="350" fill="#ffffff" stroke="#94a3b8" />
+  <text x="100" y="300" font-size="14" font-weight="bold" fill="#1e293b">भोगवटादाराचे नाव (Landowner / Occupant):</text>
+  <text x="400" y="300" font-size="16" font-weight="bold" fill="#0f172a">Dattatray Yashwant Patil / दत्तात्रय यशवंत पाटील</text>
+
+  <text x="100" y="350" font-size="14" font-weight="bold" fill="#1e293b">गट क्रमांक / सर्व्हे नंबर (Gat / Survey No):</text>
+  <text x="400" y="350" font-size="18" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">88/2B</text>
+
+  <text x="100" y="400" font-size="14" font-weight="bold" fill="#1e293b">एकूण क्षेत्र (Total Area Hectare):</text>
+  <text x="400" y="400" font-size="18" font-weight="bold" fill="#0f172a" font-family="'Courier New', monospace">3.12.00</text>
+
+  <text x="100" y="450" font-size="14" font-weight="bold" fill="#1e293b">फेरफार क्रमांक (Mutation Ferfar No):</text>
+  <text x="400" y="450" font-size="15" font-weight="bold" fill="#0f172a">FERFAR-2026-118</text>
+</svg>
