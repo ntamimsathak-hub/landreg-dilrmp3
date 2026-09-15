@@ -1,9 +1,10 @@
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import { GovHeader } from './components/common/GovHeader';
 import { GovFooter } from './components/common/GovFooter';
 import { LandingPage } from './components/home/LandingPage';
 import { LoginPage } from './components/auth/LoginPage';
+import { RegisterModal } from './components/auth/RegisterModal';
 
 // Citizen Components
 import { CitizenLayout } from './components/layout/CitizenLayout';
@@ -31,12 +32,18 @@ import { RbacAdminSettings } from './components/department/RbacAdminSettings';
 import { ApiIntegrationStatus } from './components/department/ApiIntegrationStatus';
 
 export const App: React.FC = () => {
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col min-h-screen">
-      <GovHeader />
+      <GovHeader onOpenRegisterModal={() => setIsRegisterOpen(true)} />
       <div className="flex-1 flex flex-col">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route
+            path="/"
+            element={<LandingPage onOpenRegisterModal={() => setIsRegisterOpen(true)} />}
+          />
           <Route path="/login" element={<LoginPage />} />
 
           {/* Citizen Portal Routes */}
@@ -70,6 +77,11 @@ export const App: React.FC = () => {
         </Routes>
       </div>
       <GovFooter />
+      <RegisterModal
+        isOpen={isRegisterOpen}
+        onClose={() => setIsRegisterOpen(false)}
+        onSuccess={() => navigate('/citizen')}
+      />
     </div>
   );
 };

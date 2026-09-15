@@ -16,15 +16,18 @@ import {
   FileCheck2,
   Layers,
   HelpCircle,
-  FileText
+  FileText,
+  UserPlus,
+  LogIn
 } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 interface GovHeaderProps {
   onOpenLoginModal?: () => void;
+  onOpenRegisterModal?: () => void;
 }
 
-export const GovHeader: React.FC<GovHeaderProps> = ({ onOpenLoginModal }) => {
+export const GovHeader: React.FC<GovHeaderProps> = ({ onOpenLoginModal, onOpenRegisterModal }) => {
   const { language, setLanguage, t, isHighContrast, toggleHighContrast, adjustTextScale } = useTranslation();
   const { role, citizen, officer, logout } = useAuth();
   const navigate = useNavigate();
@@ -204,20 +207,42 @@ export const GovHeader: React.FC<GovHeaderProps> = ({ onOpenLoginModal }) => {
               </button>
             </div>
           ) : (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              {/* Citizen Registration Button */}
+              <button
+                type="button"
+                onClick={() => {
+                  if (onOpenRegisterModal) {
+                    onOpenRegisterModal();
+                  } else {
+                    navigate('/login?register=true');
+                  }
+                }}
+                className="px-3 py-1.5 rounded-lg text-xs font-bold text-amber-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 shadow-xs transition-all flex items-center gap-1.5 border border-amber-600/30 hover:scale-[1.02]"
+                title={t.registerHere}
+              >
+                <UserPlus className="w-3.5 h-3.5 text-amber-950" />
+                <span>{t.register}</span>
+              </button>
+
+              {/* Citizen Login Button */}
               <Link
                 to="/login?tab=citizen"
-                className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-gov-blue-900 bg-gov-blue-50 hover:bg-gov-blue-100 border border-gov-blue-200 transition-colors flex items-center gap-1.5"
+                className="px-3 py-1.5 rounded-lg text-xs font-bold text-gov-blue-900 bg-gov-blue-50 hover:bg-gov-blue-100 border border-gov-blue-200 transition-colors flex items-center gap-1.5"
+                title={t.userLogin}
               >
                 <User className="w-3.5 h-3.5 text-gov-blue-700" />
-                {t.userLogin}
+                <span>{t.userLogin}</span>
               </Link>
+
+              {/* Department Officer Login Button */}
               <Link
                 to="/login?tab=officer"
-                className="px-3.5 py-1.5 rounded-lg text-xs font-bold text-white bg-gov-green-700 hover:bg-gov-green-800 shadow-xs transition-colors flex items-center gap-1.5"
+                className="hidden sm:flex px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-gov-green-700 hover:bg-gov-green-800 shadow-xs transition-colors items-center gap-1.5"
+                title={t.deptLogin}
               >
                 <Shield className="w-3.5 h-3.5" />
-                {t.deptLogin}
+                <span>{t.deptLogin}</span>
               </Link>
             </div>
           )}

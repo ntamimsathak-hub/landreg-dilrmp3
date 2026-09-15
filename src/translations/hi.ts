@@ -25,6 +25,7 @@ export const hi = {
   rbacSettings: "आरबीएसी एवं व्यवस्थापक",
   apiIntegrations: "एपीआई एकीकरण",
   login: "लॉग इन करें",
+  register: "पंजीकरण करें",
   logout: "लॉग आउट",
   highContrast: "उच्च कंट्रास्ट",
   textSize: "अक्षर आकार",

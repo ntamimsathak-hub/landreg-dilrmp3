@@ -25,6 +25,7 @@ export const ta = {
   rbacSettings: "அணுகல் கட்டுப்பாடு (RBAC)",
   apiIntegrations: "API இணைப்புகள்",
   login: "உள்நுழைக",
+  register: "பதிவு செய்க",
   logout: "வெளியேறுக",
   highContrast: "அதிக மாறுபாடு (High Contrast)",
   textSize: "எழுத்து அளவு",

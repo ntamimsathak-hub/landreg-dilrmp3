@@ -25,6 +25,7 @@ export const en = {
   rbacSettings: "RBAC & Admin",
   apiIntegrations: "API Integrations",
   login: "Sign In",
+  register: "Register",
   logout: "Sign Out",
   highContrast: "High Contrast",
   textSize: "Text Size",
